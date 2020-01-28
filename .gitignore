@@ -1,0 +1,12 @@
+*cv.log
+*cv.aux
+*cv.pdf
+*cv.synctex.gz
+*~
+*cv.fls
+*cv.fdb_latexmk
+*v.b*
+*cv.dvi
+*cv.*.*
+*.pdf
+*texput.log
