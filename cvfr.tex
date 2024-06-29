@@ -4,6 +4,8 @@
 
 \documentclass[10pt]{article} % Default font size
 
+\usepackage{ragged2e}
+
 \input{structure.tex} % Include the file specifying document layout
 
 %----------------------------------------------------------------------------------------
@@ -18,14 +20,6 @@
 
 %------------------------------------------------
 
-\parbox{0.5\textwidth}{ % First block
-\begin{tabbing} % Enables tabbing
-\hspace{3cm} \= \hspace{4cm} \= \kill % Spacing within the block
-{\bf Adresse} \> 73 Barrette,\\ % Address line 1
-\> Lévis, Quebec, Canada \\ % Address line 2
-{\bf Nationalité} \> Canadien % Nationality
-\end{tabbing}}
-\hfill % Horizontal space between the two blocks
 \parbox{0.5\textwidth}{ % Second block
 \begin{tabbing} % Enables tabbing
 \hspace{3cm} \= \hspace{4cm} \= \kill % Spacing within the block
@@ -33,15 +27,26 @@
 {\bf Email} \> \href{mailto:alexandre.mercier-aubin@mail.mcgill.ca}{alexandre.mercier-aubin@mail.mcgill.ca} \\ % Email address
 {\bf Site} \> \href{https://alexandremercieraubin.com}{alexandremercieraubin.com} \\
 \end{tabbing}}
+\hfill % Horizontal space between the two blocks
+\parbox{0.5\textwidth}{ % First block
+\begin{tabbing} % Enables tabbing
+\hspace{3cm} \= \hspace{4cm} \= \kill % Spacing within the block
+{\bf Nationalité} \> Canadien \\ % Nationality
+{\bf Province} \> {Québec}\\
+\end{tabbing}}
 
+\vspace{-0.7cm} \centering{ {\bf Google Scholar} \> \href{https://scholar.google.ca/citations?user=N3Yv5IcAAAAJ}{https://scholar.google.ca/citations?user=N3Yv5IcAAAAJ}  }
+
+\justifying
 %----------------------------------------------------------------------------------------
 %	PERSONAL PROFILE
 %----------------------------------------------------------------------------------------
 
 \section{Description}
 
-Étudiant au doctorat tout sauf dissertation. Mes domaines d'études sont l'infographie, la simulation de physique, la conception
-d'algorithmes et la programmation par contraintes.
+Je suis un candidat au doctorat tout sauf dissertation. Mes domaines d'études sont l'infographie, la simulation de physique, l'optimisation et la conception
+d'algorithmes et la programmation par contraintes. Mon domaine de recherche me permet de choisir des sujets de recherche abstrait tout en visualizant les résultats de façon interactive. 
+Mon travail sur en infographie combine un certain niveau artistique, même parfois créatif avec la volonté de faire avancer le domaine. Mes résultats ont menés à des applications autant au niveau de simulateurs de chirugie que dans des contextes plus ludiques comme les films et jeux vidéos.
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
@@ -52,7 +57,7 @@ d'algorithmes et la programmation par contraintes.
 \tabbedblock{
 \bf{2020-2024} \> Doctorat en  Informatique - \href{https://www.ulaval.ca/en/}{McGill University} \\[3pt]
 \>\+
-\textit{TSD} \> \\
+\textit{Infographie et animations physiques avec Prof. Paul G. Kry} \\
 GPA: 3.90
 }
 
@@ -80,21 +85,33 @@ GPA: 3.73
 %	EMPLOYMENT HISTORY SECTION
 %----------------------------------------------------------------------------------------
 
-\section{Expérience}
+\section{Enseignement}
+
+
 \job
-{}{Present}
+{}{2020-2023}
 {McGill}
 {mcgill.ca}
 {Auxiliaire d'enseignement and délégué AGSEM}
-{Répondre aux questions des étudiants, noter les examens et présenter les cours d'infographie,
-d'animations, et d'introduction aux systèmes informatiques lors de l'absence du professeur.}
+{Répondre aux questions des étudiants, corriger les examens et présenter les cours d'infographie,
+d'animations et d'introduction aux systèmes informatiques lors de l'absence du professeur.}
 
 \job
-{}{2020}
+{}{2019-2020}
 {Université Laval}
 {https://www.ulaval.ca/en/}
 {Auxiliaire d'enseignement}
-{Enseigner l'aspect pratique (laboratoires hebdomadaires) du cours de programmation avancée en C++. Noter les examens du cours d'infographie. Soutenir les étudiants du Centre d'appui à la réussite étudiante (CARÉ) avec des questions liées à 15 cours différents d'informatique.}
+{Enseigner l'aspect pratique (laboratoires hebdomadaires) du cours de programmation avancée en C++. Corriger les examens du cours d'infographie. Soutenir les étudiants du Centre d'appui à la réussite étudiante (CARÉ) avec des questions liées à 15 cours différents d'informatique.}
+
+\section{Industrie}
+
+\job
+{}{Été 2024}
+{Autodesk}
+{Autodesk.com}
+{Stagaire en recherche}
+{Création de simulation différentielle pour l'optimisation de paramètres et surfaces.}
+
 
 \job
 {2018/05,}{2018/09}
@@ -105,14 +122,13 @@ d'animations, et d'introduction aux systèmes informatiques lors de l'absence du
  Technologies: DirectX, C++, LUA \\
  Contributions : Shaders, formules LOD, corrections de bugs, formules HUD, compatibilité multiplateforme, etc.}
 
-%------------------------------------------------
 
 \job
 {2017/01 -}{2017/08}
 {Centre de Robotic et Vision Industrielle}
 {http://www.crvi.ca/}
 {Intern/Programmer}
-{Apprentissage automatique appliqué à la vision par ordinateur, programmation des contrôleurs de robots, et développement d'un nouveau
+{Apprentissage automatique appliqué à la vision par ordinateur, programmation des contrôleurs de robots et développement d'un nouveau
 site Web pour les employés.}
 
 \job
@@ -142,7 +158,7 @@ site Web pour les employés.}
 
 \skillgroup{Conseil de recherches en sciences naturelles et en génie du Canada (CRSNG) Alliance }
 {
- 15 000 \\
+ 15 000 - partenariat avec la compagnie Symgery Montréal\\
 }
 
 \skillgroup{Bourse de doctorat Hydro-Québec en Science}
@@ -161,10 +177,6 @@ site Web pour les employés.}
 \textit{} 39 000\$\\
 }
 
-\skillgroup{Undergraduate Research Fellowship 2019-2020, Université Laval}
-{
-\textit{J'ai refusé pour prendre une bourse de maîtrise} 6500\$\\
-}
 %------------------------------------------------
 
 \skillgroup{Association for Constraint Programming, CP2019}
@@ -183,8 +195,8 @@ Toutes mes publications sont répertoriées gratuitement sur mon site internet :
 
 \skillgroup{Moteurs Graphiques}
 {
--\href{https://github.com/AlexandreMercierAubin/AdaptiveRigidification2022}{Adaptive Rigidification Engine}\\
--\href{https://github.com/AlexandreMercierAubin/ComputerGraphics}{A simple computer graphics engine}\\
+-\href{https://github.com/AlexandreMercierAubin/AdaptiveRigidification2022}{Simulateur d'objets déformables pour rigidité adaptive}\\
+-\href{https://github.com/AlexandreMercierAubin/ComputerGraphics}{Moteur graphique OpenGL/SDL2 simple.}\\
 
 }
 
@@ -194,35 +206,26 @@ Toutes mes publications sont répertoriées gratuitement sur mon site internet :
 
 -\href{https://youtu.be/qJjy8b0kuSY}{Proto-Spyder Assault, Compétition de programmation de jeux vidéos en 48h à Valleyfield}
 
--\href{https://youtu.be/s6vr07Nt1IY}{SansFin, Projet de Cégep}
+-\href{https://youtu.be/s6vr07Nt1IY}{SansFin, Projet de Cégep avec Unreal Engine}
 }
 
 \section{Service}
 \textbf{Délégué AGSEM}:Délégué AGSEM du département d'informatique à McGill
 
-\textbf{V.P. des activitées sociales AGIL}: Organiser des événements pour l'association des étudiants diplômés en informatique.
+\noindent\textbf{V.P. des activitées sociales AGIL}: Organiser des événements pour l'association des étudiants diplômés en informatique.
 
-\textbf{Volontaire à l 'ASETIN}: Bénévolat au sein de l'association étudiante d'informatique. J'ai été barman, réceptionniste et j'ai
+\noindent\textbf{Volontaire à l 'ASETIN}: Bénévolat au sein de l'association étudiante d'informatique. J'ai été barman, réceptionniste et j'ai
 aidé à préparer les initiations des étudiants
 
-\textbf{Volontaire à la ville de Lévis}: Réceptionniste au Festival de l'Eau de Lévis.
+\noindent\textbf{Volontaire à la ville de Lévis}: Réceptionniste au Festival de l'Eau de Lévis.
 
-\textbf{Volontaire étudiant at SCA 2020 et 2024}: Soutenir la conférence en assurant le bon fonctionnement des opérations lors des
+\noindent\textbf{Volontaire étudiant SCA 2020 et 2024}: Soutenir la conférence en assurant le bon fonctionnement des opérations lors des
 sessions de communications techniques et des principales expositions.
 %----------------------------------------------------------------------------------------
 %	REFEREE SECTION
 %----------------------------------------------------------------------------------------
 
 \section{Références}
-
-\parbox{0.5\textwidth}{ 
-\begin{tabbing}
-\hspace{2.75cm} \= \hspace{4cm} \= \kill 
-{\bf Nom} \> Claude-Guy Quimper \\ 
-{\bf Établissement} \> Université Laval \\ 
-{\bf Poste} \> Professeur Agrégé \\  
-{\bf Email} \> \href{mailto:Claude-Guy.Quimper@ift.ulaval.ca}{Claude-Guy.Quimper@ift.ulaval.ca} 
-\end{tabbing}}\\
 
 \parbox{0.5\textwidth}{
 \begin{tabbing}
@@ -233,16 +236,16 @@ sessions de communications techniques et des principales expositions.
 {\bf Email} \> \href{mailto:kry@cs.mcgill.ca}{kry@cs.mcgill.ca}
 \end{tabbing}}
 
-\parbox{0.5\textwidth}{
+\noindent\parbox{0.5\textwidth}{
 \begin{tabbing}
 \hspace{2.75cm} \= \hspace{4cm} \= \kill
 {\bf Nom} \> Sheldon Andrews\\ 
 {\bf Établissement} \> École de technologie supérieure\\ 
-{\bf Poste} \> Associate Professor \\ 
+{\bf Poste} \>  Professeur Agrégé \\ 
 {\bf Email} \> \href{mailto:sheldon.andrews@etsmtl.ca}{sheldon.andrews@etsmtl.ca}
 \end{tabbing}}
 
-\parbox{0.5\textwidth}{
+\noindent\parbox{0.5\textwidth}{
 \begin{tabbing}
 \hspace{2.75cm} \= \hspace{4cm} \= \kill
 {\bf Nom} \> David I.W. Levin\\ 

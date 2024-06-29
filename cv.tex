@@ -3,7 +3,7 @@
 %----------------------------------------------------------------------------------------
 
 \documentclass[10pt]{article} % Default font size
-
+\usepackage{ragged2e}
 \input{structure.tex} % Include the file specifying document layout
 
 %----------------------------------------------------------------------------------------
@@ -18,21 +18,24 @@
 
 %------------------------------------------------
 
-\parbox{0.5\textwidth}{ % First block
-\begin{tabbing} % Enables tabbing
-\hspace{3cm} \= \hspace{4cm} \= \kill % Spacing within the block
-{\bf Address} \> 73 Barrette,\\ % Address line 1
-\> Levis, Quebec, Canada \\ % Address line 2
-{\bf Nationality} \> Canadian % Nationality
-\end{tabbing}}
-\hfill % Horizontal space between the two blocks
 \parbox{0.5\textwidth}{ % Second block
 \begin{tabbing} % Enables tabbing
 \hspace{3cm} \= \hspace{4cm} \= \kill % Spacing within the block
-{\bf Mobile Phone} \> +1 (418) 572 0698 \\ % Mobile phone
+{\bf Phone} \> +1 (418) 572 0698 \\ % Mobile phone
 {\bf Email} \> \href{mailto:alexandre.mercier-aubin@mail.mcgill.ca}{alexandre.mercier-aubin@mail.mcgill.ca} \\ % Email address
-{\bf Website} \> \href{https://alexandremercieraubin.com}{alexandremercieraubin.com} \\
+{\bf website} \> \href{https://alexandremercieraubin.com}{alexandremercieraubin.com} \\
 \end{tabbing}}
+\hfill % Horizontal space between the two blocks
+\parbox{0.5\textwidth}{ % First block
+\begin{tabbing} % Enables tabbing
+\hspace{3cm} \= \hspace{4cm} \= \kill % Spacing within the block
+{\bf Nationality} \> Canadien \\ % Nationality
+{\bf Province} \> {Québec}\\
+\end{tabbing}}
+
+\vspace{-0.7cm} \centering{ {\bf Google Scholar} \> \href{https://scholar.google.ca/citations?user=N3Yv5IcAAAAJ}{https://scholar.google.ca/citations?user=N3Yv5IcAAAAJ}  }
+
+\justifying
 
 %----------------------------------------------------------------------------------------
 %	PERSONAL PROFILE
