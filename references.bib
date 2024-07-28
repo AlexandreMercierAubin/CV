@@ -1,0 +1,70 @@
+@InProceedings{10.1007/978-3-030-58942-4_22,
+author="Mercier-Aubin, Alexandre
+and Gaudreault, Jonathan
+and Quimper, Claude-Guy",
+editor="Hebrard, Emmanuel
+and Musliu, Nysret",
+title="Leveraging Constraint Scheduling: A Case Study to the Textile Industry",
+booktitle="Integration of Constraint Programming, Artificial Intelligence, and Operations Research",
+year="2020",
+publisher="Springer International Publishing",
+address="Cham",
+pages="334--346",
+abstract="Despite the significant progress made in scheduling in the past years, industrial problems with several hundred tasks remain intractable for some variants of the scheduling problems. We present techniques that can be used to leverage the power of constraint programming to solve an industrial problem with 800 non-preemptive tasks, 90 resources, and sequence-dependent setup times. Our method involves solving the traveling salesperson problem (TSP) as a simplification of the scheduling problem and using the simplified solution to guide the branching heuristics. We also explore large neighborhood search. Experiments conducted on a dataset provided by our partner from the textile industry show that we obtain non-optimal but satisfactory solutions.",
+isbn="978-3-030-58942-4"
+}
+
+@InProceedings{ConfidenceConstraint,
+author="Mercier-Aubin, Alexandre
+and Dumetz, Ludwig
+and Gaudreault, Jonathan
+and Quimper, Claude-Guy",
+editor="Simonis, Helmut",
+title="The Confidence Constraint: A Step Towards Stochastic CP Solvers",
+booktitle="Principles and Practice of Constraint Programming",
+year="2020",
+publisher="Springer International Publishing",
+address="Cham",
+pages="759--773",
+abstract="We introduce the Confidence constraint, a chance constraint that ensures, with probability {\$}{\$}{\backslash}gamma {\$}{\$}, that a set of variables are no smaller than random variables for which the probability distribution is given. This constraint is useful in stochastic optimization to ensure that a solution is robust to external random events. It allows to control the trade-off between optimizing the objective function and ensuring the satisfiability of the solution under random parameters. We present a filtering algorithm for this constraint with explanations. We apply the constraint to a case study, an industrial scheduling problem where tasks have random processing times due to possible breakdowns during their execution. We evaluate our solutions with simulations and show that this new constraint allows robust solutions in decent computation time.",
+isbn="978-3-030-58475-7"
+}
+
+@article{AR,
+author = {Mercier-Aubin, Alexandre and Winter, Alexandre and Levin, David I. W. and Kry, Paul G.},
+title = {Adaptive Rigidification of Elastic Solids},
+year = {2022},
+issue_date = {July 2022},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {41},
+number = {4},
+issn = {0730-0301},
+url = {http://doi.acm.org/10.1145/3528223.3530124},
+doi = {10.1145/3528223.3530124},
+abstract = {We present a method for reducing the computational cost of elastic solid simulation by treating connected sets of non-deforming elements as rigid bodies. Non-deforming elements are identified as those where the strain rate squared Frobenius norm falls below a threshold for several frames. Rigidification uses a breadth first search to identify connected components while avoiding connections that would form hinges between rigid components. Rigid elements become elastic again when their approximate strain velocity rises above a threshold, which is fast to compute using a single iteration of conjugate gradient with a fixed Laplacian-based incomplete Cholesky preconditioner. With rigidification, the system size to solve at each time step can be greatly reduced, and if all elastic element become rigid, it reduces to solving the rigid body system. We demonstrate our results on a variety of 2D and 3D examples, and show that our method is likewise especially beneficial in contact rich examples.},
+journal = {ACM Transactions on Graphics},
+month = {7},
+articleno = {71},
+numpages = {11},
+keywords = {physics simulation, adaptive, rigid bodies, finite element method}
+}
+
+@article{ARDS,
+author = {Mercier-Aubin, Alexandre and Kry, Paul G.},
+title = {Adaptive Rigidification of Discrete Shells},
+year = {2023},
+issue_date = {August 2023},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {6},
+number = {3},
+opturl = {https://doi.org/10.1145/3606932},
+doi = {10.1145/3606932},
+abstract = {We present a method to improve the computation time of thin shell simulations by using adaptive rigidification to reduce the number of degrees of freedom. Our method uses a discretization independent metric for bending rates, and we derive a membrane strain rate to curvature rate equivalence that permits the use of a common threshold. To improve accuracy, we enhance the elastification oracle by considering both membrane and bending deformation to determine when to rigidify or elastify. Furthermore, we explore different approaches that are compatible with the previous work on adaptive rigidifcation and enhance the accuracy of the elastification on new contacts without increasing the computational overhead. Additionally, we propose a scaling approach that reduces the conditioning issues that arise from mixing rigid and elastic bodies in the same model.},
+journal = {Proc. ACM Comput. Graph. Interact. Tech.},
+month = {8},
+articleno = {39},
+numpages = {17},
+keywords = {adaptive simulation, cloth, finite element, rigid bodies, shells}
+}
