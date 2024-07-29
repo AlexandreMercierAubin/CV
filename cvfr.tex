@@ -6,6 +6,9 @@
 
 \usepackage{ragged2e}
 \usepackage{etoolbox}
+\usepackage{fontspec}
+\setmainfont{Times New Roman}
+
 \patchcmd{\thebibliography}{\section*{\refname}}{}{}{}
 
 \input{structure.tex} % Include the file specifying document layout
@@ -46,7 +49,7 @@
 
 \section{Description}
 
-Je suis candidat au doctorat avec l'intention de déposer ma thèse en automne 2024. Mes domaines d'études incluent l'infographie, la simulation physique, l'optimisation et la conception d'algorithmes, ainsi que la programmation par contraintes. Mon domaine de recherche me permet de choisir des sujets abstraits tout en visualisant les résultats de manière interactive. Mon travail en infographie combine un certain niveau artistique, parfois même créatif, avec la volonté de faire progresser le domaine. Mes résultats ont mené à des applications tant dans les simulateurs de chirurgie que dans des contextes plus ludiques comme les films et les jeux vidéo.
+Je suis candidat au doctorat avec l'intention de déposer ma thèse en octobre 2024. Mes domaines d'études incluent l'infographie, la simulation physique, l'optimisation et la conception d'algorithmes, ainsi que la programmation par contraintes. Mon domaine de recherche me permet de choisir des sujets abstraits tout en visualisant les résultats de manière interactive. Mon travail en infographie combine un certain niveau artistique, parfois même créatif, avec la volonté de faire progresser le domaine. Mes résultats ont mené à des applications tant dans les simulateurs de chirurgie que dans des contextes plus ludiques comme les films et les jeux vidéo.
 
 
 %----------------------------------------------------------------------------------------
@@ -56,30 +59,29 @@ Je suis candidat au doctorat avec l'intention de déposer ma thèse en automne 2
 \section{Éducation}
 
 \tabbedblock{
-\bf{2020-2024} \> Doctorat en  Informatique - \href{https://www.ulaval.ca/en/}{McGill University} \\[3pt]
-\>\+
+\bf{2020 -} \> Doctorat en  Informatique - \href{https://www.ulaval.ca/en/}{McGill University} \\[3pt]
+\bf{Présent} \>\+
 \textit{Infographie et animations physiques avec Prof. Paul G. Kry} \\
 GPA: 3.90
 }
 
-%------------------------------------------------
-
 \tabbedblock{
-\bf{2019-2020} \> Maîtrise en  Informatique - \href{https://www.ulaval.ca/en/}{Université Laval} \\[3pt]
-\>\+
+\bf{2019 -} \> Maîtrise en  Informatique - \href{https://www.ulaval.ca/en/}{Université Laval} \\[3pt]
+\bf{2020} \>\+
 \textit{Programmation par contraintes avec Prof. Claude-Guy Quimper} \> \\
 GPA: 3.93
 }
 
 \tabbedblock{
-\bf{2017-2019} \> Baccalauréat en Informatique - \href{https://www.ulaval.ca/en/}{Université Laval}\\[3pt]
-\>\+
+\bf{2017 -} \> Baccalauréat en Informatique - \href{https://www.ulaval.ca/en/}{Université Laval}\\[3pt]
+\bf{2019} \>\+
 \textit{honneurs} \> \\
 GPA: 3.73
 }
 
 \tabbedblock{
-\bf{2014-2017} \> DEC en Informatique - \href{http://cll.qc.ca/}{Cégep Lévis-Lauzon}
+\bf{2014 -} \> DEC en Informatique - \href{http://cll.qc.ca/}{Cégep Lévis-Lauzon}\\[3pt]
+\bf{2017}
 }
 
 %----------------------------------------------------------------------------------------
@@ -186,7 +188,7 @@ site Web pour les employés.}
 }
 
 \section{Recherche}
-Dans le but d'offrir un accès ouvert et gratuit aux innovations scientifiques, toutes mes publications sont répertoriées gratuitement sur mon site internet : \href{https://alexandremercieraubin.com/Work}{alexandremercieraubin.com/Work}. Il est à noter que les articles d'infographie sont dans les journaux des conférences Special Interest Group on Computer Graphics and Interactive Techniques (SIGGRAPH) ou de ACM SIGGRAPH / EUROGRAPHICS Symposium on Computer Animation (SCA).
+Dans le but d'offrir un accès ouvert et gratuit aux innovations scientifiques, toutes mes publications sont répertoriées gratuitement sur mon site internet : \href{https://alexandremercieraubin.com/Work}{alexandremercieraubin.com/Work}. Il est à noter que les articles d'infographie sont dans les journaux associés aux conférences Special Interest Group on Computer Graphics and Interactive Techniques (SIGGRAPH) ou de ACM SIGGRAPH / EUROGRAPHICS Symposium on Computer Animation (SCA).
 \newcounter{listCounter}
 \subsection{Articles}
 %\nocite{*}
@@ -194,48 +196,50 @@ Dans le but d'offrir un accès ouvert et gratuit aux innovations scientifiques, 
 %\bibliography{references}
 \begin{enumerate}
   \setcounter{enumi}{\value{listCounter}}
-  \item Alexandre Mercier-Aubin, Ludwig Dumetz, Jonathan Gaudreault, and Claude-Guy Quimper. The Confidence Constraint: A Step Towards Stochastic CP Solvers. In Proceedings of the 26th International Conference on Principles and Practice of Constraint Programming (CP), pages 759-773, 2020. \stepcounter{listCounter}
+  \item \textbf{Alexandre Mercier-Aubin}, Ludwig Dumetz, Jonathan Gaudreault, and Claude-Guy Quimper. The Confidence Constraint: A Step Towards Stochastic CP Solvers. In Proceedings of the 26th International Conference on Principles and Practice of Constraint Programming (CP), pages 759-773, 2020. \stepcounter{listCounter}
 
- \item Alexandre Mercier-Aubin, Jonathan Gaudreault, and Claude-Guy Quimper. Leveraging Constraint Scheduling: A Case Study to the Textile Industry. In Proceedings of the 17th International Conference on the Integration of Constraint Programming, Artificial Intelligence, and Operations Research (CPAIOR), pages 334-346, 2020. \stepcounter{listCounter}
+ \item \textbf{Alexandre Mercier-Aubin}, Jonathan Gaudreault, and Claude-Guy Quimper. Leveraging Constraint Scheduling: A Case Study to the Textile Industry. In Proceedings of the 17th International Conference on the Integration of Constraint Programming, Artificial Intelligence, and Operations Research (CPAIOR), pages 334-346, 2020. \stepcounter{listCounter}
 
- \item Alexandre Mercier-Aubin,  Alexandre Winter,  David I. W. Levin, and Paul G. Kry. Adaptive Rigidification of Elastic Solids. In ACM Transactions on Graphics (TOG), volume 41, issue 4, article 71, 2022.  \stepcounter{listCounter}
+ \item \textbf{Alexandre Mercier-Aubin},  Alexandre Winter,  David I. W. Levin, and Paul G. Kry. Adaptive Rigidification of Elastic Solids. In ACM Transactions on Graphics (TOG), volume 41, issue 4, article 71, 2022.  \stepcounter{listCounter}
 
- \item Alexandre Mercier-Aubin and Paul G. Kry. Adaptive Rigidification of Discrete Shells. Proceedings of the ACM on Computer Graphics and Interactive Techniques (PACMCGIT), volume 6, issue 3, 2023. \stepcounter{listCounter}
+ \item \textbf{Alexandre Mercier-Aubin} and Paul G. Kry. Adaptive Rigidification of Discrete Shells. In Proceedings of the ACM on Computer Graphics and Interactive Techniques (PACMCGIT), volume 6, issue 3, 2023. \stepcounter{listCounter}
 
-\item Alexandre Mercier-Aubin and Paul G. Kry. A Multi-layer Solver for XPBD. To appear in Proceedings of the Computer Graphics Forum (CGF), volume 43, issue 5, 2024.\stepcounter{listCounter}
+\item \textbf{Alexandre Mercier-Aubin} and Paul G. Kry. A Multi-layer Solver for XPBD. To appear in Proceedings of the Computer Graphics Forum (CGF), volume 43, issue 5, 2024.\stepcounter{listCounter}
 \end{enumerate}
 
 \subsection{Ateliers}
 \begin{enumerate}
   \setcounter{enumi}{\value{listCounter}}
-  \item Alexandre Mercier-Aubin, Jonathan Gaudreault, and Claude-Guy Quimper.Multi-Resource Scheduling with Setup Times:
+  \item \textbf{Alexandre Mercier-Aubin}, Jonathan Gaudreault, and Claude-Guy Quimper. Multi-Resource Scheduling with Setup Times:
 An Application Case to the Textile Industry. In  Doctoral Program Proceedings of the 25th International
-Conference on Principles and Practice of Constraint Programming (CP 2019). Stamford, CT, U.S. \stepcounter{listCounter}
+Conference on Principles and Practice of Constraint Programming (CP), 2019. \stepcounter{listCounter}
 
 \end{enumerate}
 
 \subsection{Mémoire de maîtrise}
 \begin{enumerate}
   \setcounter{enumi}{\value{listCounter}}
-  \item Alexandre Mercier-Aubin, Ordonnancement de tâches sous contraintes sur des métiers à tisser, Université Laval, 2020. \stepcounter{listCounter}
+  \item \textbf{Alexandre Mercier-Aubin}, Ordonnancement de tâches sous contraintes sur des métiers à tisser, Université Laval, 2020. \stepcounter{listCounter}
 \end{enumerate}
 
 \subsection{Affiches}
 \begin{enumerate}
   \setcounter{enumi}{\value{listCounter}}
-  \item Alexandre Mercier-Aubin, Adaptive Rigidification of Elastic Solids Prototype, Graphics Interface (GI), 2022. \stepcounter{listCounter}
-  \item Alexandre Mercier-Aubin, Adaptive Rigidification of Elastic Solids Prototype, REPARTI, 2022. \stepcounter{listCounter}
+  \item \textbf{Alexandre Mercier-Aubin}, Adaptive Rigidification of Elastic Solids Prototype, Graphics Interface (GI), 2022. \stepcounter{listCounter}
+  \item \textbf{Alexandre Mercier-Aubin}, Adaptive Rigidification of Elastic Solids Prototype, colloque REPARTI, 2022. \stepcounter{listCounter}
 \end{enumerate}
 
 \subsection{Selection d'exposés}
 \begin{enumerate}
   \setcounter{enumi}{\value{listCounter}}
-  \item Tomatograph,  Adaptive Method for Soft Body Simulations, 2021.\stepcounter{listCounter}
-  \item Special Interest Group on Computer Graphics and Interactive Techniques (SIGGRAPH), Adaptive Rigidification of Elastic Solids, 2022. \stepcounter{listCounter}
-  \item Séminaire Université Laval, Infographie et Animation Physique : Solidification de Matériaux Viscoélatisques, 2022.\stepcounter{listCounter}
-  \item Symposium on Computer Animation (SCA), Adaptive Rigidification of Discrete Shells, 2023. \stepcounter{listCounter}
-  \item Quebec-Ontario pre-SIGGRAPH workshop (GraphQuOn), Strain-based Multi-Layer solver for XPBD, 2023.\stepcounter{listCounter}
-  \item Symposium on Computer Animation (SCA), A Multi-layer Solver for XPBD, 2024. \stepcounter{listCounter}
+  \item The Confidence Constraint: A Step Towards Stochastic CP Solvers. International Conference on Principles and Practice of Constraint Programming (CP), 2020.\stepcounter{listCounter}
+  \item  Leveraging Constraint Scheduling: A Case Study to the Textile Industry. International Conference on the Integration of Constraint Programming (CPAIOR), 2020.\stepcounter{listCounter}
+  \item Adaptive Method for Soft Body Simulations. Tomatograph, 2021.\stepcounter{listCounter}
+  \item Adaptive Rigidification of Elastic Solids. Special Interest Group on Computer Graphics and Interactive Techniques (SIGGRAPH), 2022. \stepcounter{listCounter}
+  \item Infographie et Animation Physique : Solidification de Matériaux Viscoélatisques.  Séminaire Université Laval, 2022.\stepcounter{listCounter}
+  \item Adaptive Rigidification of Discrete Shells. Symposium on Computer Animation (SCA), 2023. \stepcounter{listCounter}
+  \item Strain-based Multi-Layer solver for XPBD. Quebec-Ontario pre-SIGGRAPH (GraphQuOn), 2023.\stepcounter{listCounter}
+  \item A Multi-layer Solver for XPBD. Symposium on Computer Animation (SCA), 2024. \stepcounter{listCounter}
 \end{enumerate}
 
 %----------------------------------------------------------------------------------------
